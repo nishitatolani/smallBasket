@@ -7,9 +7,9 @@ import CartScreen from './src/components/CartScreen/CartScreen'
 import ProductList from "./src/components/ProductList/ProductList";
 import ProductDetails from "./src/components/ProductDetail/ProductDetail";
 import BarcodeScanner from "./src/components/BarcodeScanner/BarcodeScanner";
-import { CartProvider } from "./src/context/CartContext";
-import HomeScreen from "./src/components/LoginScreen/HomeScreen";
 import Header from "./src/components/Common/Header/Header";
+import LoginScreen from "./src/components/LoginScreen/Login";
+import { CartProvider } from "./src/context/CartContext";
 
 const Stack = createStackNavigator();
 
@@ -27,7 +27,7 @@ const App = () => {
             },
           })}
         >
-          <Stack.Screen name="Login" component={HomeScreen} />
+          <Stack.Screen name="Login" component={LoginScreen} />
           <Stack.Screen name="ProductList" component={ProductList} />
           <Stack.Screen name="ProductDetails" component={ProductDetails} />
           <Stack.Screen name="Basket" component={CartScreen} />

@@ -9,7 +9,7 @@ import {
   Button,
 } from "react-native";
 import { styles } from "./ProductList.style";
-import { productsArray } from "../../src/lib/helper";
+import { productsArray } from "../../lib/helper";
 import AddCartButton from "../Common/AddCartButton/AddCartButton";
 
 const ProductList = ({ navigation }) => {

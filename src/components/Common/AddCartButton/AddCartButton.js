@@ -1,7 +1,7 @@
 import react, { useContext } from "react";
 import { TouchableOpacity, View, Text } from "react-native";
 import { styles } from "./style";
-import { CartContext } from "../../../src/context/CartContext";
+import { CartContext } from "../../../context/CartContext";
 
 export default AddCartButton = ({item}) => {
   const { addToCart, cartItems } = useContext(CartContext);

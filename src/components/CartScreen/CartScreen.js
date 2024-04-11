@@ -9,8 +9,8 @@ import {
   Image,
   SafeAreaView,
 } from "react-native";
-import { CartContext } from "../../src/context/CartContext";
 import { styles } from "./CartScreen.style";
+import { CartContext } from "../../context/CartContext";
 
 const CartScreen = () => {
   const { addToCart, cartItems } = useContext(CartContext);

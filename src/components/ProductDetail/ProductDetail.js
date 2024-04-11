@@ -1,8 +1,8 @@
 import React from "react";
 import { View, Text, Image, TouchableOpacity } from "react-native";
 import { styles } from "./ProductDetails.style";
-import { productsArray } from "../../src/lib/helper";
 import AddCartButton from "../Common/AddCartButton/AddCartButton";
+import {productsArray} from '../../lib/helper'
 
 const ProductDetails = ({ route, navigation }) => {
   const { item, result } = route.params;

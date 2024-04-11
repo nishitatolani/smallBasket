@@ -2,9 +2,9 @@
 
 import React, { useContext } from "react";
 import { View, Image, Text, TouchableOpacity } from "react-native";
-import { CartContext } from "../../../src/context/CartContext";
 import { useNavigation } from "@react-navigation/native";
 import Icon from "react-native-vector-icons/FontAwesome";
+import { CartContext } from "../../../context/CartContext";
 
 const Header = ({ route }) => {
   const { cartItemCount } = useContext(CartContext);
@@ -39,7 +39,7 @@ const Header = ({ route }) => {
       {shouldRenderCartIcon && (
         <TouchableOpacity onPress={handleCartPress}>
           <Image
-            source={require("../../../src/assets/cart.png")}
+            source={require("../../../assets/cart.png")}
             style={{ width: 25, height: 25, resizeMode: "contain" }}
           />
         </TouchableOpacity>
